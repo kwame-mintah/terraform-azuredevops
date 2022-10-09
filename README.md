@@ -64,8 +64,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azuredevops_agent_pool.agent_pool_raspberrypi](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_pool) | resource |
-| [azuredevops_agent_queue.project_agent_queue](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_queue) | resource |
+| [azuredevops_agent_pool.raspberrypi_agent_automation_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_pool) | resource |
+| [azuredevops_agent_pool.raspberrypi_agent_deployment_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_pool) | resource |
+| [azuredevops_agent_queue.raspberrypi_agent_automation_queue](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_queue) | resource |
 | [azuredevops_environment.development_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
 | [azuredevops_environment.production_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
 | [azuredevops_environment.staging_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
@@ -74,7 +75,7 @@ No modules.
 | [azuredevops_git_repository.k_pipelines_repo](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/git_repository) | resource |
 | [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/project) | resource |
 | [azuredevops_project_pipeline_settings.pipeline](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/project_pipeline_settings) | resource |
-| [azuredevops_resource_authorization.project_agent_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/resource_authorization) | resource |
+| [azuredevops_resource_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/resource_authorization) | resource |
 | [azuredevops_git_repositories.all_project_repos](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/data-sources/git_repositories) | data source |
 
 ## Inputs
