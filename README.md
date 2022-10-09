@@ -66,7 +66,10 @@ No modules.
 |------|------|
 | [azuredevops_agent_pool.agent_pool_raspberrypi](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_pool) | resource |
 | [azuredevops_agent_queue.project_agent_queue](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_queue) | resource |
-| [azuredevops_environment.environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
+| [azuredevops_environment.development_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
+| [azuredevops_environment.production_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
+| [azuredevops_environment.staging_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
+| [azuredevops_environment.testing_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
 | [azuredevops_git_repository.k_nodejs_repo](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/git_repository) | resource |
 | [azuredevops_git_repository.k_pipelines_repo](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/git_repository) | resource |
 | [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/project) | resource |
