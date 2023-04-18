@@ -47,14 +47,14 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.1.7 |
-| <a name="requirement_azuredevops"></a> [azuredevops](#requirement\_azuredevops) | =0.2.2 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.4.5 |
+| <a name="requirement_azuredevops"></a> [azuredevops](#requirement\_azuredevops) | =0.4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | 0.2.2 |
+| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | 0.4.0 |
 
 ## Modules
 
