@@ -58,25 +58,25 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_k_backend_app"></a> [k\_backend\_app](#module\_k\_backend\_app) | ./modules/git_repositories | n/a |
+| <a name="module_k_frontend_app"></a> [k\_frontend\_app](#module\_k\_frontend\_app) | ./modules/git_repositories | n/a |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [azuredevops_agent_pool.raspberrypi_agent_automation_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_pool) | resource |
-| [azuredevops_agent_pool.raspberrypi_agent_deployment_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_pool) | resource |
-| [azuredevops_agent_queue.raspberrypi_agent_automation_queue](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/agent_queue) | resource |
-| [azuredevops_environment.development_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
-| [azuredevops_environment.production_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
-| [azuredevops_environment.staging_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
-| [azuredevops_environment.testing_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/environment) | resource |
-| [azuredevops_git_repository.k_nodejs_repo](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/git_repository) | resource |
-| [azuredevops_git_repository.k_pipelines_repo](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/git_repository) | resource |
-| [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/project) | resource |
-| [azuredevops_project_pipeline_settings.pipeline](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/project_pipeline_settings) | resource |
-| [azuredevops_resource_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/resources/resource_authorization) | resource |
-| [azuredevops_git_repositories.all_project_repos](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.2/docs/data-sources/git_repositories) | data source |
+| [azuredevops_agent_pool.raspberrypi_agent_automation_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/agent_pool) | resource |
+| [azuredevops_agent_pool.raspberrypi_agent_deployment_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/agent_pool) | resource |
+| [azuredevops_agent_queue.raspberrypi_agent_automation_queue](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/agent_queue) | resource |
+| [azuredevops_environment.development_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/environment) | resource |
+| [azuredevops_environment.production_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/environment) | resource |
+| [azuredevops_environment.staging_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/environment) | resource |
+| [azuredevops_environment.testing_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/environment) | resource |
+| [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/project) | resource |
+| [azuredevops_project_pipeline_settings.pipeline](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/project_pipeline_settings) | resource |
+| [azuredevops_resource_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/resource_authorization) | resource |
 
 ## Inputs
 
@@ -89,7 +89,8 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_k_backend_repo_remote_url"></a> [k\_backend\_repo\_remote\_url](#output\_k\_backend\_repo\_remote\_url) | Remote url for backend app. |
+| <a name="output_k_frontend_repo_remote_url"></a> [k\_frontend\_repo\_remote\_url](#output\_k\_frontend\_repo\_remote\_url) | Remote url for frontend app. |
 | <a name="output_project_id"></a> [project\_id](#output\_project\_id) | The project name. |
 | <a name="output_project_name"></a> [project\_name](#output\_project\_name) | The project id. |
-| <a name="output_project_repositories"></a> [project\_repositories](#output\_project\_repositories) | A list of all repositories in the project and their<br>attributes. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK --->

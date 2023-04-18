@@ -16,12 +16,20 @@ EOF
   value = azuredevops_project.project.name
 }
 
-output "project_repositories" {
+output "k_frontend_repo_remote_url" {
   description = <<-EOF
-    A list of all repositories in the project and their
-    attributes.
+    Remote url for frontend app.
 
 EOF
 
-  value = data.azuredevops_git_repositories.all_project_repos.repositories
+  value = module.k_frontend_app.git_repo_remote_url
+}
+
+output "k_backend_repo_remote_url" {
+  description = <<-EOF
+    Remote url for backend app.
+
+EOF
+
+  value = module.k_backend_app.git_repo_remote_url
 }
