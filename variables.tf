@@ -16,3 +16,11 @@ EOF
 
   type = string
 }
+
+variable "project_name" {
+  description = <<-EOF
+    Azure DevOps project.
+EOF
+
+  type = string
+}

@@ -1,5 +1,5 @@
 resource "azuredevops_project" "project" {
-  name               = "k-terraform"
+  name               = var.project_name
   visibility         = "private"
   version_control    = "Git"
   work_item_template = "Agile"
