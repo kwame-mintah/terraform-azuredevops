@@ -1,12 +1,13 @@
 # Git Repositories Module -----------------------
 # -----------------------------------------------
 data "azuredevops_project" "project" {
-  name = var.azuredevops_project_name
+  name = var.project_name
 }
 
 data "azuredevops_git_repository" "repo_attr" {
   project_id = data.azuredevops_project.project.id
   name       = var.git_repistory_name
+  depends_on = [azuredevops_git_repository.repo]
 }
 
 resource "azuredevops_git_repository" "repo" {

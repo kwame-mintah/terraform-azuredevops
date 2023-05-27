@@ -1,10 +1,9 @@
-variable "azuredevops_project_name" {
+variable "project_name" {
   description = <<-EOF
     (Required if project_id not set) Name of the Project.
 EOF
 
-  type    = string
-  default = "k-terraform"
+  type = string
 }
 
 variable "git_repistory_name" {

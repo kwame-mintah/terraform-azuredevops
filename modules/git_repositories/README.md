@@ -9,7 +9,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | =0.4.0 |
+| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | 0.4.0 |
 
 ## Modules
 
@@ -27,9 +27,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_azuredevops_project_name"></a> [azuredevops\_project\_name](#input\_azuredevops\_project\_name) | (Required if project\_id not set) Name of the Project. | `string` | `"k-terraform"` | no |
 | <a name="input_git_default_branch"></a> [git\_default\_branch](#input\_git\_default\_branch) | The ref of the default branch. <br>Will be used as the branch name for initialized repositories. | `string` | `"refs/heads/master"` | no |
 | <a name="input_git_repistory_name"></a> [git\_repistory\_name](#input\_git\_repistory\_name) | (Required) The name of the git repository. | `string` | n/a | yes |
+| <a name="input_project_name"></a> [project\_name](#input\_project\_name) | (Required if project\_id not set) Name of the Project. | `string` | n/a | yes |
 | <a name="input_repo_init_type"></a> [repo\_init\_type](#input\_repo\_init\_type) | (Required) The type of repository to create. <br>Valid values: `Uninitialized`, `Clean` or `Import`. | `string` | `"Clean"` | no |
 
 ## Outputs
