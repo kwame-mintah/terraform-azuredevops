@@ -19,7 +19,7 @@ EOF
 
 variable "project_name" {
   description = <<-EOF
-    Azure DevOps project.
+    Name of the project.
 EOF
 
   type = string
