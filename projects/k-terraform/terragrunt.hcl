@@ -7,3 +7,14 @@ terraform {
 inputs = {
   project_name               = "k"
 }
+
+locals {
+  project_name = "k"
+}
+
+remote_state {
+  backend = "local"
+  config = {
+    path = "${get_parent_terragrunt_dir()}/${path_relative_to_include()}/${local.project_name}-terraform.tfstate"
+  }
+}
