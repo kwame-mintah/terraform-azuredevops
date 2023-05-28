@@ -5,7 +5,8 @@ terraform {
 
 # These are inputs that need to be passed for the terragrunt configuration
 inputs = {
-  project_name               = "k"
+  project_name             = "k"
+  init_git_repository_name = ["k-frontend-app", "k-backend-app", "k-infrastructure-terraform"]
 }
 
 locals {
