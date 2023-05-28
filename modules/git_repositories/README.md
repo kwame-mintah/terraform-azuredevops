@@ -28,12 +28,11 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_git_default_branch"></a> [git\_default\_branch](#input\_git\_default\_branch) | The ref of the default branch. <br>Will be used as the branch name for initialized repositories. | `string` | `"refs/heads/master"` | no |
-| <a name="input_git_repistory_name"></a> [git\_repistory\_name](#input\_git\_repistory\_name) | (Required) The name of the git repository. | `string` | n/a | yes |
+| <a name="input_init_git_repositories"></a> [init\_git\_repositories](#input\_init\_git\_repositories) | (Optional) Names of git repositories to add into the <br>project. | <pre>list(object({<br>    name        = string<br>    source_type = string<br>    source_url  = string<br>    init_type   = string<br>  }))</pre> | `[]` | no |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | (Required if project\_id not set) Name of the Project. | `string` | n/a | yes |
-| <a name="input_repo_init_type"></a> [repo\_init\_type](#input\_repo\_init\_type) | (Required) The type of repository to create. <br>Valid values: `Uninitialized`, `Clean` or `Import`. | `string` | `"Clean"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_git_repo_remote_url"></a> [git\_repo\_remote\_url](#output\_git\_repo\_remote\_url) | Retrieve the git repository remote URL. |
+| <a name="output_git_repos_attributes"></a> [git\_repos\_attributes](#output\_git\_repos\_attributes) | Retrieve the git repository attributes. |

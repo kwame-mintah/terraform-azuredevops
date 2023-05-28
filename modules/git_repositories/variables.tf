@@ -6,12 +6,20 @@ EOF
   type = string
 }
 
-variable "git_repistory_name" {
+variable "init_git_repositories" {
   description = <<-EOF
-    (Required) The name of the git repository.
+    (Optional) Names of git repositories to add into the 
+    project.
+
 EOF
 
-  type = string
+  type = list(object({
+    name        = string
+    source_type = string
+    source_url  = string
+    init_type   = string
+  }))
+  default = []
 }
 
 variable "git_default_branch" {
@@ -24,12 +32,3 @@ EOF
   default = "refs/heads/master"
 }
 
-variable "repo_init_type" {
-  description = <<-EOF
-    (Required) The type of repository to create. 
-    Valid values: `Uninitialized`, `Clean` or `Import`.
-EOF
-
-  type    = string
-  default = "Clean"
-}

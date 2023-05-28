@@ -1,8 +1,8 @@
-output "git_repo_remote_url" {
+output "git_repos_attributes" {
   description = <<-EOF
-    Retrieve the git repository remote URL.
+    Retrieve the git repository attributes.
 
 EOF
 
-  value = data.azuredevops_git_repository.repo_attr.remote_url
+  value = data.azuredevops_git_repository.repo_attr[*]
 }
