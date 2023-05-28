@@ -1,13 +1,7 @@
-module "k_frontend_app" {
+module "git_repositories" {
   source             = "./modules/git_repositories"
-  git_repistory_name = "${var.project_name}-frontend-app"
-  project_name       = var.project_name
-  depends_on         = [azuredevops_project.project]
-}
-
-module "k_backend_app" {
-  source             = "./modules/git_repositories"
-  git_repistory_name = "${var.project_name}-backend-app"
+  for_each           = toset(var.init_git_repository_name)
+  git_repistory_name = each.key
   project_name       = var.project_name
   depends_on         = [azuredevops_project.project]
 }

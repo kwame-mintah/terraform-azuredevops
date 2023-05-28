@@ -2,6 +2,7 @@ variable "organization_url" {
   description = <<-EOF
     This is the Azure DevOps organization url. 
     It can also be sourced from the AZDO_ORG_SERVICE_URL environment variable.
+    
 EOF
 
   type = string
@@ -12,6 +13,7 @@ variable "personal_access_token" {
     This is the Azure DevOps organization personal access token. 
     The account corresponding to the token will need "owner" privileges for this organization. 
     It can also be sourced from the AZDO_PERSONAL_ACCESS_TOKEN environment variable.
+
 EOF
 
   type = string
@@ -20,7 +22,17 @@ EOF
 variable "project_name" {
   description = <<-EOF
     Name of the project.
+
 EOF
 
   type = string
+}
+
+variable "init_git_repository_name" {
+  description = <<-EOF
+    Names of repositories to create in the project.
+
+EOF
+
+  type = list(string)
 }

@@ -60,8 +60,7 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_k_backend_app"></a> [k\_backend\_app](#module\_k\_backend\_app) | ./modules/git_repositories | n/a |
-| <a name="module_k_frontend_app"></a> [k\_frontend\_app](#module\_k\_frontend\_app) | ./modules/git_repositories | n/a |
+| <a name="module_git_repositories"></a> [git\_repositories](#module\_git\_repositories) | ./modules/git_repositories | n/a |
 
 ## Resources
 
@@ -82,6 +81,7 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_init_git_repository_name"></a> [init\_git\_repository\_name](#input\_init\_git\_repository\_name) | Names of repositories to create in the project. | `list(string)` | n/a | yes |
 | <a name="input_organization_url"></a> [organization\_url](#input\_organization\_url) | This is the Azure DevOps organization url. <br>It can also be sourced from the AZDO\_ORG\_SERVICE\_URL environment variable. | `string` | n/a | yes |
 | <a name="input_personal_access_token"></a> [personal\_access\_token](#input\_personal\_access\_token) | This is the Azure DevOps organization personal access token. <br>The account corresponding to the token will need "owner" privileges for this organization. <br>It can also be sourced from the AZDO\_PERSONAL\_ACCESS\_TOKEN environment variable. | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Name of the project. | `string` | n/a | yes |
@@ -90,8 +90,7 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Description |
 |------|-------------|
-| <a name="output_k_backend_repo_remote_url"></a> [k\_backend\_repo\_remote\_url](#output\_k\_backend\_repo\_remote\_url) | Remote url for backend app. |
-| <a name="output_k_frontend_repo_remote_url"></a> [k\_frontend\_repo\_remote\_url](#output\_k\_frontend\_repo\_remote\_url) | Remote url for frontend app. |
-| <a name="output_project_id"></a> [project\_id](#output\_project\_id) | The project name. |
-| <a name="output_project_name"></a> [project\_name](#output\_project\_name) | The project id. |
+| <a name="output_git_repositories_repo_attr"></a> [git\_repositories\_repo\_attr](#output\_git\_repositories\_repo\_attr) | Name for all git repositories within the<br>project. |
+| <a name="output_project_id"></a> [project\_id](#output\_project\_id) | The project id. |
+| <a name="output_project_name"></a> [project\_name](#output\_project\_name) | The project name. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK --->
