@@ -28,11 +28,16 @@ EOF
   type = string
 }
 
-variable "init_git_repository_name" {
+variable "init_git_repositories" {
   description = <<-EOF
     Names of repositories to create in the project.
 
 EOF
 
-  type = list(string)
+  type = list(object({
+    name        = string
+    source_type = string
+    source_url  = string
+    init_type   = string
+  }))
 }

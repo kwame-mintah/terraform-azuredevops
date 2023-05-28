@@ -81,7 +81,7 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_init_git_repository_name"></a> [init\_git\_repository\_name](#input\_init\_git\_repository\_name) | Names of repositories to create in the project. | `list(string)` | n/a | yes |
+| <a name="input_init_git_repositories"></a> [init\_git\_repositories](#input\_init\_git\_repositories) | Names of repositories to create in the project. | <pre>list(object({<br>    name        = string<br>    source_type = string<br>    source_url  = string<br>    init_type   = string<br>  }))</pre> | n/a | yes |
 | <a name="input_organization_url"></a> [organization\_url](#input\_organization\_url) | This is the Azure DevOps organization url. <br>It can also be sourced from the AZDO\_ORG\_SERVICE\_URL environment variable. | `string` | n/a | yes |
 | <a name="input_personal_access_token"></a> [personal\_access\_token](#input\_personal\_access\_token) | This is the Azure DevOps organization personal access token. <br>The account corresponding to the token will need "owner" privileges for this organization. <br>It can also be sourced from the AZDO\_PERSONAL\_ACCESS\_TOKEN environment variable. | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Name of the project. | `string` | n/a | yes |
