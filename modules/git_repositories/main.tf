@@ -21,4 +21,12 @@ resource "azuredevops_git_repository" "repo" {
     source_type = each.value.source_type
     source_url  = each.value.source_url
   }
+  lifecycle {
+    ignore_changes = [
+      # Ignore changes to initialization to support importing existing repositories
+      # Given that a repo now exists, either imported into terraform state or created by terraform,
+      # we don't care for the configuration of initialization against the existing resource
+      initialization,
+    ]
+  }
 }
