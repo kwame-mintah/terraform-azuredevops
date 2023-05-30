@@ -3,13 +3,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.4.5 |
-| <a name="requirement_azuredevops"></a> [azuredevops](#requirement\_azuredevops) | =0.4.0 |
+| <a name="requirement_azuredevops"></a> [azuredevops](#requirement\_azuredevops) | = 0.5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | 0.4.0 |
+| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | 0.5.0 |
 
 ## Modules
 
@@ -19,9 +19,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azuredevops_git_repository.repo](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/resources/git_repository) | resource |
-| [azuredevops_git_repository.repo_attr](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/data-sources/git_repository) | data source |
-| [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.4.0/docs/data-sources/project) | data source |
+| [azuredevops_git_repository.repo](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/git_repository) | resource |
+| [azuredevops_git_repository.repo_attr](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/data-sources/git_repository) | data source |
+| [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/data-sources/project) | data source |
 
 ## Inputs
 
