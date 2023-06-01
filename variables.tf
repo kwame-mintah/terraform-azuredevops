@@ -28,6 +28,33 @@ EOF
   type = string
 }
 
+variable "azurerm_subscription_name" {
+  description = <<-EOF
+    The Subscription Name of the targets.
+
+EOF
+
+  type = string
+}
+
+variable "azurerm_spn_tenantid" {
+  description = <<-EOF
+    The Tenant ID if the service principal.
+
+EOF
+
+  type = string
+}
+
+variable "azurerm_subscription_id" {
+  description = <<-EOF
+    The Subscription ID of the Azure targets.
+
+EOF
+
+  type = string
+}
+
 variable "init_git_repositories" {
   description = <<-EOF
     Names of repositories to create in the project.

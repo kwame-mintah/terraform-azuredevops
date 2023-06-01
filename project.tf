@@ -6,6 +6,14 @@ resource "azuredevops_project" "project" {
   description        = "Managed by Terraform."
 }
 
+resource "azuredevops_serviceendpoint_azurerm" "auto_azurem_service" {
+  project_id                = azuredevops_project.project.id
+  service_endpoint_name     = "${var.azurerm_subscription_name} (${var.azurerm_subscription_id})"
+  azurerm_spn_tenantid      = var.azurerm_spn_tenantid
+  azurerm_subscription_id   = var.azurerm_subscription_id
+  azurerm_subscription_name = var.azurerm_subscription_name
+}
+
 resource "azuredevops_environment" "development_environment" {
   project_id  = azuredevops_project.project.id
   name        = "Develop Environment"

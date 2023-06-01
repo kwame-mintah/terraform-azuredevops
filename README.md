@@ -76,11 +76,15 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 | [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/project) | resource |
 | [azuredevops_project_pipeline_settings.pipeline](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/project_pipeline_settings) | resource |
 | [azuredevops_resource_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/resource_authorization) | resource |
+| [azuredevops_serviceendpoint_azurerm.auto_azurem_service](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/serviceendpoint_azurerm) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_azurerm_spn_tenantid"></a> [azurerm\_spn\_tenantid](#input\_azurerm\_spn\_tenantid) | The Tenant ID if the service principal. | `string` | n/a | yes |
+| <a name="input_azurerm_subscription_id"></a> [azurerm\_subscription\_id](#input\_azurerm\_subscription\_id) | The Subscription ID of the Azure targets. | `string` | n/a | yes |
+| <a name="input_azurerm_subscription_name"></a> [azurerm\_subscription\_name](#input\_azurerm\_subscription\_name) | The Subscription Name of the targets. | `string` | n/a | yes |
 | <a name="input_init_git_repositories"></a> [init\_git\_repositories](#input\_init\_git\_repositories) | Names of repositories to create in the project. | <pre>list(object({<br>    name        = string<br>    source_type = string<br>    source_url  = string<br>    init_type   = string<br>  }))</pre> | n/a | yes |
 | <a name="input_organization_url"></a> [organization\_url](#input\_organization\_url) | This is the Azure DevOps organization url. <br>It can also be sourced from the AZDO\_ORG\_SERVICE\_URL environment variable. | `string` | n/a | yes |
 | <a name="input_personal_access_token"></a> [personal\_access\_token](#input\_personal\_access\_token) | This is the Azure DevOps organization personal access token. <br>The account corresponding to the token will need "owner" privileges for this organization. <br>It can also be sourced from the AZDO\_PERSONAL\_ACCESS\_TOKEN environment variable. | `string` | n/a | yes |
