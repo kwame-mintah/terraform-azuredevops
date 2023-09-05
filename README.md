@@ -47,14 +47,14 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.4.5 |
-| <a name="requirement_azuredevops"></a> [azuredevops](#requirement\_azuredevops) | = 0.5.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4.5 |
+| <a name="requirement_azuredevops"></a> [azuredevops](#requirement\_azuredevops) | >= 0.8.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | 0.5.0 |
+| <a name="provider_azuredevops"></a> [azuredevops](#provider\_azuredevops) | 0.9.0 |
 
 ## Modules
 
@@ -66,17 +66,17 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Type |
 |------|------|
-| [azuredevops_agent_pool.raspberrypi_agent_automation_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/agent_pool) | resource |
-| [azuredevops_agent_pool.raspberrypi_agent_deployment_pool](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/agent_pool) | resource |
-| [azuredevops_agent_queue.raspberrypi_agent_automation_queue](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/agent_queue) | resource |
-| [azuredevops_environment.development_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/environment) | resource |
-| [azuredevops_environment.production_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/environment) | resource |
-| [azuredevops_environment.staging_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/environment) | resource |
-| [azuredevops_environment.testing_environment](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/environment) | resource |
-| [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/project) | resource |
-| [azuredevops_project_pipeline_settings.pipeline](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/project_pipeline_settings) | resource |
-| [azuredevops_resource_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/resource_authorization) | resource |
-| [azuredevops_serviceendpoint_azurerm.auto_azurem_service](https://registry.terraform.io/providers/microsoft/azuredevops/0.5.0/docs/resources/serviceendpoint_azurerm) | resource |
+| [azuredevops_agent_pool.raspberrypi_agent_automation_pool](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/agent_pool) | resource |
+| [azuredevops_agent_pool.raspberrypi_agent_deployment_pool](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/agent_pool) | resource |
+| [azuredevops_agent_queue.raspberrypi_agent_automation_queue](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/agent_queue) | resource |
+| [azuredevops_environment.development_environment](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/environment) | resource |
+| [azuredevops_environment.production_environment](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/environment) | resource |
+| [azuredevops_environment.staging_environment](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/environment) | resource |
+| [azuredevops_environment.testing_environment](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/environment) | resource |
+| [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/project) | resource |
+| [azuredevops_project_pipeline_settings.pipeline](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/project_pipeline_settings) | resource |
+| [azuredevops_resource_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/resource_authorization) | resource |
+| [azuredevops_serviceendpoint_azurerm.auto_azurem_service](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/serviceendpoint_azurerm) | resource |
 
 ## Inputs
 
