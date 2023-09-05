@@ -60,7 +60,7 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_git_repositories"></a> [git\_repositories](#module\_git\_repositories) | git@github.com:kwame-mintah/terraform-azuredevops-git-repositories.git | n/a |
+| <a name="module_git_repositories"></a> [git\_repositories](#module\_git\_repositories) | git@github.com:kwame-mintah/terraform-azuredevops-git-repositories.git | d2b17c8ab1b26fedb9eb9a3a39f7ae2d8bfb6910 |
 
 ## Resources
 
