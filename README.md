@@ -73,9 +73,9 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 | [azuredevops_environment.production_environment](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/environment) | resource |
 | [azuredevops_environment.staging_environment](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/environment) | resource |
 | [azuredevops_environment.testing_environment](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/environment) | resource |
+| [azuredevops_pipeline_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/pipeline_authorization) | resource |
 | [azuredevops_project.project](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/project) | resource |
 | [azuredevops_project_pipeline_settings.pipeline](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/project_pipeline_settings) | resource |
-| [azuredevops_resource_authorization.project_agent_queue_authorization](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/resource_authorization) | resource |
 | [azuredevops_serviceendpoint_azurerm.auto_azurem_service](https://registry.terraform.io/providers/microsoft/azuredevops/latest/docs/resources/serviceendpoint_azurerm) | resource |
 
 ## Inputs

@@ -10,11 +10,10 @@ resource "azuredevops_agent_queue" "raspberrypi_agent_automation_queue" {
 }
 
 # Grant access to queue to all pipelines in the project
-resource "azuredevops_resource_authorization" "project_agent_queue_authorization" {
+resource "azuredevops_pipeline_authorization" "project_agent_queue_authorization" {
   project_id  = azuredevops_project.project.id
   resource_id = azuredevops_agent_queue.raspberrypi_agent_automation_queue.id
   type        = "queue"
-  authorized  = true
 }
 
 # A deployment pool
