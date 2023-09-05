@@ -5,25 +5,25 @@ terraform {
 
 # These are inputs that need to be passed for the terragrunt configuration
 inputs = {
-  project_name             = "k"
-  init_git_repositories    = [
+  project_name = "k"
+  init_git_repositories = [
     {
-      name = "k-infrastructure-terraform",
+      name        = "k-infrastructure-terraform",
       source_type = "Git",
-      source_url = "https://github.com/kwame-mintah/terraform-azurem-template.git",
-      init_type = "Import",
+      source_url  = "https://github.com/kwame-mintah/terraform-azurerm-template.git",
+      init_type   = "Import",
     },
     {
-      name = "k-frontend-app"
+      name        = "k-frontend-app"
       source_type = null
-      source_url = null
-      init_type = "Clean"
+      source_url  = null
+      init_type   = "Clean"
     },
     {
-      name = "k-backend-app"
+      name        = "k-backend-app"
       source_type = null
-      source_url = null
-      init_type = "Clean"
+      source_url  = null
+      init_type   = "Clean"
     }
   ]
 }
@@ -34,7 +34,7 @@ locals {
 
 remote_state {
   backend = "local"
-  config  = {
-     path = "${get_parent_terragrunt_dir()}/${path_relative_to_include()}/${local.project_name}-terraform.tfstate"
+  config = {
+    path = "${get_parent_terragrunt_dir()}/${path_relative_to_include()}/${local.project_name}-terraform.tfstate"
   }
 }
