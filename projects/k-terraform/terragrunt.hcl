@@ -8,10 +8,11 @@ inputs = {
   project_name = "k"
   init_git_repositories = [
     {
-      name        = "k-infrastructure-terraform",
-      source_type = "Git",
-      source_url  = "https://github.com/kwame-mintah/terraform-azurerm-template.git",
-      init_type   = "Import",
+      name           = "k-infrastructure-terraform",
+      default_branch = "refs/heads/master"
+      source_type    = "Git",
+      source_url     = "https://github.com/kwame-mintah/terraform-azurerm-template.git",
+      init_type      = "Import",
     },
   ]
 }

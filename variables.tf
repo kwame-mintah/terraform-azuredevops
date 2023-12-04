@@ -62,9 +62,10 @@ variable "init_git_repositories" {
 EOF
 
   type = list(object({
-    name        = string
-    source_type = string
-    source_url  = string
-    init_type   = string
+    name           = string
+    default_branch = string
+    source_type    = string
+    source_url     = string
+    init_type      = string
   }))
 }
