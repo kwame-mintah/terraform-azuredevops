@@ -13,18 +13,6 @@ inputs = {
       source_url  = "https://github.com/kwame-mintah/terraform-azurerm-template.git",
       init_type   = "Import",
     },
-    {
-      name        = "k-frontend-app"
-      source_type = null
-      source_url  = null
-      init_type   = "Clean"
-    },
-    {
-      name        = "k-backend-app"
-      source_type = null
-      source_url  = null
-      init_type   = "Clean"
-    }
   ]
 }
 
