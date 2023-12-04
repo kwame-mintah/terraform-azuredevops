@@ -14,6 +14,13 @@ inputs = {
       source_url     = "https://github.com/kwame-mintah/terraform-azurerm-template.git",
       init_type      = "Import",
     },
+    {
+      name           = "python-fastapi-azure-k8s-cluster",
+      default_branch = "refs/heads/main"
+      source_type    = "Git",
+      source_url     = "https://github.com/kwame-mintah/python-fastapi-bigger-applications-template.git",
+      init_type      = "Import"
+    }
   ]
 }
 
