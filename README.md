@@ -8,6 +8,7 @@ This project will focus on the [Azure DevOps](https://github.com/microsoft/terra
 
 ### Dependencies
 
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 - [terraform](https://www.terraform.io/),
 - [terragrunt](https://terragrunt.gruntwork.io/),
 - [pre-commit](https://pre-commit.com/),
